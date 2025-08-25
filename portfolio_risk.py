@@ -1,6 +1,7 @@
 import yfinance as yf
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 stocks = ["AAPL", "MSFT", "GOOGL"] 
 
@@ -44,3 +45,18 @@ var_99 = np.percentile(portfolio_returns, 1)   # 1st percentile
 
 print("Value at Risk (95%):", round(var_95, 4))
 print("Value at Risk (99%):", round(var_99, 4))
+
+plt.figure(figsize=(10,6))
+plt.hist(portfolio_returns, bins=50, color="skyblue", edgecolor="black", alpha=0.7)
+
+# Mark VaR thresholds
+plt.axvline(var_95, color="red", linestyle="dashed", linewidth=2, label=f"VaR 95%: {round(var_95,4)}")
+plt.axvline(var_99, color="darkred", linestyle="dashed", linewidth=2, label=f"VaR 99%: {round(var_99,4)}")
+
+plt.title("Portfolio Daily Returns Distribution with Value at Risk (VaR)")
+plt.xlabel("Daily Returns")
+plt.ylabel("Frequency")
+plt.legend()
+
+plt.savefig("VaR_distribution.png")
+plt.show()
