@@ -43,36 +43,17 @@ This project applies **quantitative finance techniques** to analyze the risk of 
 
 ## 📉 Results
 
-- **Annual Return**: ~X%  
-- **Annual Volatility**: ~Y%  
-- **Sharpe Ratio**: ~Z  
-- **VaR (95%)**: With 95% confidence, losses will not exceed *A%* in one day.  
-- **VaR (99%)**: With 99% confidence, losses will not exceed *B%* in one day.  
+- **Annual Return**: 0.27%  
+- **Annual Volatility**: 0.2839%  
+- **Sharpe Ratio**: 0.9511  
+- **VaR (95%)**: With 95% confidence, losses will not exceed *2.71%* in one day.  
+- **VaR (99%)**: With 99% confidence, losses will not exceed *4.66%* in one day.  
 
 ### Visualization
 ![VaR Distribution](VaR_distribution.png)  
 
----
-
-## 📂 Project Structure
-Portfolio-Risk-Analysis/
-│-- portfolio_risk.py # Main analysis script
-│-- README.md # Project documentation
-│-- requirements.txt # Dependencies
-│-- VaR_distribution.png # Output visualization
-
-📚 Learnings
-
-Built foundational understanding of portfolio risk metrics.
-
-Gained practical experience with financial data analysis in Python.
-
-Improved familiarity with Git & GitHub workflow.
 
 👤 Author
 
 Kushagra Shrivastava
-
-LinkedIn
-
-GitHub
+  
