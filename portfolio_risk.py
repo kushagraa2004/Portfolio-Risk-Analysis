@@ -18,3 +18,9 @@ volatility = portfolio_returns.std()
 
 print("Average Daily Return:", round(avg_return, 5))
 print("Volatility (Std Dev):", round(volatility, 5))
+
+# ~0.01% daily risk-free rate (standard norm)
+risk_free_rate = 0.0001
+sharpe_ratio = (avg_return - risk_free_rate) / volatility
+
+print("Sharpe Ratio:", round(sharpe_ratio, 2))
